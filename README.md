@@ -19,7 +19,7 @@
 
 <br />
 
-### h5+APP
+### 微信小程序
 
 ![微信小程序登录](https://java0088.github.io/sun-login-template/static/temp/wechat_login.png)
 <br />
