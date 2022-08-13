@@ -1,12 +1,23 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{			"path": "pages/login/login",			"style" : {				"navigationBarTitleText": "Login"			}		},
-	    {
-            "path" : "pages/register/register",
-            "style" : {				"navigationBarTitleText": "Register"			}
-        }
-    ],
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}
+	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",				"navigationBarBackgroundColor": "#FFFFFF",		"backgroundColor": "#FFFFFF"
-	},	"tabBar": {		"color": "#a2a9a8",		"selectedColor": "#30C6B3",		"borderStyle": "black",		"backgroundColor": "#FFFFFF",		"list": [			{				"pagePath": "pages/login/login",				"iconPath": "static/imgs/fire_gray.png",				"selectedIconPath": "static/imgs/fire_green.png",				"text": "登录"			},			{				"pagePath": "pages/register/register",				"iconPath": "static/imgs/moom_gray.png",				"selectedIconPath": "static/imgs/moom_green.png",				"text": "注册"			}		]	}
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
 }
