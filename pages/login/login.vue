@@ -13,7 +13,7 @@
 	function handleSubmit() {
 		if(!state.mobile) return uni.showToast({title: '请输入手机号',icon:'none',duration: 1500})		if(!state.password) return uni.showToast({title: '请输入密码',icon:'none',duration: 1500})		uni.showToast({title: '登录成功',duration: 1500})	}
 	
-	function goRegister() {		uni.switchTab({url: '/pages/register/register'})	}
+	function goRegister() {		uni.navigateTo({url: '/pages/register/register'})	}
 </script>
 
 <style scoped>	.sun-logo-box {		display: flex;		justify-content: center;		align-items: center;		width: 750rpx;		height: 300rpx;	}
