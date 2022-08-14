@@ -1,5 +1,5 @@
 <template>
-  User
+  {{ $t('user.name') }}
   <button type="primary" @click="handleLogout">退出登录</button>
 </template>
 

@@ -3,25 +3,25 @@
 		{
 		    "path" : "pages/home/home",
 		    "style" : {
-		        "navigationBarTitleText": "Home"
+		        "navigationBarTitleText": "%home.name%"
 		    }
 		},
 		{
 		    "path" : "pages/category/category",
 		    "style" : {
-		        "navigationBarTitleText": "Category"
+		        "navigationBarTitleText": "%category.name%"
 		    }
 		},
 		{
 		    "path" : "pages/user/user",
 		    "style" : {
-		        "navigationBarTitleText": "User"
+		        "navigationBarTitleText": "%user.name%"
 		    }
 		},
-		{			"path": "pages/login/login",			"style" : {				"navigationBarTitleText": "Login"			}		},
+		{			"path": "pages/login/login",			"style" : {				"navigationBarTitleText": "%login.name%"			}		},
 	    {
             "path" : "pages/register/register",
-            "style" : {				"navigationBarTitleText": "Register"			}
+            "style" : {				"navigationBarTitleText": "%register.name%"			}
         }
     ],
 	"globalStyle": {
@@ -31,12 +31,12 @@
 				"pagePath": "pages/home/home",
 				"iconPath": "static/imgs/home_default.png",
 				"selectedIconPath": "static/imgs/home_active.png",
-				"text": "Home"
+				"text": "%home.name%"
 			},
 			{
 				"pagePath": "pages/category/category",
 				"iconPath": "static/imgs/category_default.png",
 				"selectedIconPath": "static/imgs/category_active.png",
-				"text": "Category"
-			},			{				"pagePath": "pages/user/user",				"iconPath": "static/imgs/user_default.png",				"selectedIconPath": "static/imgs/user_active.png",				"text": "User"			}		]	}
+				"text": "%category.name%"
+			},			{				"pagePath": "pages/user/user",				"iconPath": "static/imgs/user_default.png",				"selectedIconPath": "static/imgs/user_active.png",				"text": "%user.name%"			}		]	}
 }
