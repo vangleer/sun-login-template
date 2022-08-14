@@ -8,40 +8,41 @@
 		<view class="sun-login-box">
 			<view class="sun-label">
 				<image style="width: 28rpx;height:39rpx;" src="@/static/imgs/mobile_icon.png"/>
-				<text class="label-text">手机</text>
+				<text class="label-text">{{ $t('login.mobile') }}</text>
 			</view>
 			<view class="sun-input-box">
-				<input v-model="state.mobile" type="text" placeholder="请输入手机号" placeholder-class="placeholder-class"/>
+				<input v-model="state.mobile" type="text" :placeholder="$t('login.enterMobile')" placeholder-class="placeholder-class"/>
 				<image @click="state.mobile=''" class="close-icon" src="@/static/imgs/close_icon.png"/>
 			</view>
 		</view>
 		<view class="sun-login-box">
 			<view class="sun-label">
 				<image style="width: 29rpx;height:29rpx;" src="@/static/imgs/code_icon.png"/>
-				<text class="label-text">验证码</text>
+				<text class="label-text">{{ $t('login.code') }}</text>
 			</view>
 			<view class="sun-input-box">
-				<input v-model="state.code" type="text" placeholder="请输入验证码" placeholder-class="placeholder-class"/>
-				<text class="code-text" :class="{ gray: state.showTime }" @click="handleGetCodeClick">{{state.showTime ?state.currentCountTime+'s后重新获取':'获取验证码'}}</text>
+				<input v-model="state.code" type="text" :placeholder="$t('login.enterCode')" placeholder-class="placeholder-class"/>
+				<text class="code-text" :class="{ gray: state.showTime }" @click="handleGetCodeClick">{{state.showTime ?state.currentCountTime+$t('login.afterGet'):$t('login.getCode')}}</text>
 			</view>
 		</view>
 		<view class="sun-login-box">
 			<view class="sun-label">
 				<image style="width: 29rpx;height:37rpx;" src="@/static/imgs/pwd_icon.png"/>
-				<text class="label-text">密码</text>
+				<text class="label-text">{{ $t('login.password') }}</text>
 			</view>
 			<view class="sun-input-box">
-				<input v-model="state.password" type="text" placeholder="请输入密码" placeholder-class="placeholder-class"/>
+				<input v-model="state.password" type="text" :placeholder="$t('login.enterPassword')" placeholder-class="placeholder-class"/>
 				<image @click="state.password=''" class="close-icon" src="@/static/imgs/close_icon.png"/>
 			</view>
 		</view>
 		<view class="login-btn-box">
-			<view class="login-btn" @click="handleSubmit">注册</view>
+			<view class="login-btn" @click="handleSubmit">{{ t('register.name') }}</view>
 		</view>
 	</view>
 </template>
 
 <script setup>
+	import { t } from '@/locale/index.js'
 	import { reactive, onMounted } from 'vue'
 	
 	const state = reactive({
@@ -59,10 +60,10 @@
 	})
 	
 	function handleSubmit() {
-		if(!state.mobile) return uni.showToast({title: '请输入手机号',icon:'none',duration: 1500})
-		if(!state.code) return uni.showToast({title: '请输入验证码',icon:'none',duration: 1500})
-		if(!state.password) return uni.showToast({title: '请输入密码',icon:'none',duration: 1500})
-		uni.showToast({title: '注册成功',duration: 1500})
+		if(!state.mobile) return uni.showToast({title: t('login.enterMobile'),icon:'none',duration: 1500})
+		if(!state.code) return uni.showToast({title: t('login.enterCode'),icon:'none',duration: 1500})
+		if(!state.password) return uni.showToast({title: t('login.enterPassword'),icon:'none',duration: 1500})
+		uni.showToast({title: t('common.success'),duration: 1500})
 	}
 	
 	function handleGetCodeClick() {

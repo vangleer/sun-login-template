@@ -16,6 +16,8 @@ export function changeLocale(locale) {
 	i18n.global.locale = locale
 }
 
+export const t = (key) => i18n.global.t(key)
+
 export default function setupI18n(app) {
 	app.use(i18n)
 }

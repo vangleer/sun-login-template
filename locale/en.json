@@ -1,4 +1,6 @@
 {
+	"common.success": "Success",
+	
 	"home.name": "Home",
 	"home.title1": "i18n",
 	"home.title2": "request",
@@ -8,6 +10,17 @@
 	"category.name": "Category",
 	"user.name": "User",
 	"user.logout": "Logout",
+	
 	"login.name": "Login",
+	"login.mobile": "Mobile",
+	"login.enterMobile": "Enter Mobile",
+	"login.password": "Password",
+	"login.enterPassword": "Enter Password",
+	"login.forgot": "Forgot Password / Unbind",
+	"login.code": "Verify Code",
+	"login.enterCode": "Enter Verify Code",
+	"login.getCode": "Get Verify Code",
+	"login.afterGet": "Get Again",
+	
 	"register.name": "Register"
 }

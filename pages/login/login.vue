@@ -1,17 +1,18 @@
 <template>
 	<view class="sun-index">		<view class="sun-logo-box">			<view class="sun-logo">				<image class="sun-icon-img" src="@/static/imgs/fire_white.png"/>			</view>		</view>
-		<view class="sun-login-box">			<view class="sun-label">				<image style="width: 28rpx;height:39rpx;" src="@/static/imgs/mobile_icon.png"/>				<text class="label-text">手机</text>			</view>			<view class="sun-input-box">				<input v-model="state.mobile" type="text" placeholder="请输入手机号" placeholder-class="placeholder-class"/>				<image @click="state.mobile=''" class="close-icon" src="@/static/imgs/close_icon.png"/>			</view>		</view>		<view class="sun-login-box">			<view class="sun-label">				<image style="width: 29rpx;height:37rpx;" src="@/static/imgs/pwd_icon.png"/>				<text class="label-text">密码</text>			</view>			<view class="sun-input-box">				<input v-model="state.password" type="text" placeholder="请输入密码" placeholder-class="placeholder-class"/>				<image @click="state.password=''" class="close-icon" src="@/static/imgs/close_icon.png"/>			</view>		</view>		<view class="sun-tip">			<text class="sun-tip-text">忘记密码/解绑</text>			<text class="sun-tip-text" @click="goRegister">注册</text>		</view>		<view class="login-btn-box">			<view class="login-btn" @click="handleSubmit">登录</view>		</view>	</view>
+		<view class="sun-login-box">			<view class="sun-label">				<image style="width: 28rpx;height:39rpx;" src="@/static/imgs/mobile_icon.png"/>				<text class="label-text">{{ $t('login.mobile') }}</text>			</view>			<view class="sun-input-box">				<input v-model="state.mobile" type="text" :placeholder="$t('login.enterMobile')" placeholder-class="placeholder-class"/>				<image @click="state.mobile=''" class="close-icon" src="@/static/imgs/close_icon.png"/>			</view>		</view>		<view class="sun-login-box">			<view class="sun-label">				<image style="width: 29rpx;height:37rpx;" src="@/static/imgs/pwd_icon.png"/>				<text class="label-text">{{ $t('login.password') }}</text>			</view>			<view class="sun-input-box">				<input v-model="state.password" type="text" :placeholder="$t('login.enterPassword')" placeholder-class="placeholder-class"/>				<image @click="state.password=''" class="close-icon" src="@/static/imgs/close_icon.png"/>			</view>		</view>		<view class="sun-tip">			<text class="sun-tip-text">{{ $t('login.forgot') }}</text>			<text class="sun-tip-text" @click="goRegister">{{ $t('register.name') }}</text>		</view>		<view class="login-btn-box">			<view class="login-btn" @click="handleSubmit">{{ $t('login.name') }}</view>		</view>	</view>
 </template>
 
 <script setup>
 	import { reactive } from 'vue'
+	import { t } from '@/locale/index.js'
 	const state = reactive({
 		mobile: '',
 		password:''
 	})
 	
 	function handleSubmit() {
-		if(!state.mobile) return uni.showToast({title: '请输入手机号',icon:'none',duration: 1500})		if(!state.password) return uni.showToast({title: '请输入密码',icon:'none',duration: 1500})		uni.showToast({title: '登录成功',duration: 1500})
+		if(!state.mobile) return uni.showToast({title: t('login.enterMobile'),icon:'none',duration: 1500})		if(!state.password) return uni.showToast({title: t('login.enterPassword'),icon:'none',duration: 1500})		uni.showToast({title: t('common.success'),duration: 1500})
 		setTimeout(() => {
 			uni.switchTab({
 				url: '/pages/home/home'

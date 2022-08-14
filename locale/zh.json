@@ -1,4 +1,6 @@
 {
+	"common.success": "成功",
+	
 	"home.name": "首页",
 	"home.tip": "vue3 uniapp 快速开发模板",
 	"home.title1": "国际化",
@@ -8,6 +10,17 @@
 	"category.name": "分类",
 	"user.name": "用户",
 	"user.logout": "退出登录",
+	
 	"login.name": "登录",
+	"login.mobile": "手机",
+	"login.enterMobile": "请输入手机号",
+	"login.password": "密码",
+	"login.enterPassword": "请输入密码",
+	"login.forgot": "忘记密码/解绑",
+	"login.code": "验证码",
+	"login.enterCode": "请输入验证码",
+	"login.getCode": "获取验证码",
+	"login.afterGet": "后重新获取",
+	
 	"register.name": "注册"
 }
