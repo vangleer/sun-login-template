@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="sun-page">
 		<button>修改背景颜色</button>
 		<button @click="store.increment">add</button>
 		<h2>{{ store.count }}</h2>

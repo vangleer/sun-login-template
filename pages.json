@@ -29,14 +29,14 @@
 	},	"tabBar": {		"color": "#a2a9a8",		"selectedColor": "#30C6B3",		"borderStyle": "black",		"backgroundColor": "#FFFFFF",		"list": [
 			{
 				"pagePath": "pages/home/home",
-				"iconPath": "static/imgs/fire_gray.png",
-				"selectedIconPath": "static/imgs/fire_green.png",
+				"iconPath": "static/imgs/home_default.png",
+				"selectedIconPath": "static/imgs/home_active.png",
 				"text": "Home"
 			},
 			{
 				"pagePath": "pages/category/category",
-				"iconPath": "static/imgs/moom_gray.png",
-				"selectedIconPath": "static/imgs/moom_green.png",
+				"iconPath": "static/imgs/category_default.png",
+				"selectedIconPath": "static/imgs/category_active.png",
 				"text": "Category"
-			},			{				"pagePath": "pages/user/user",				"iconPath": "static/imgs/fire_gray.png",				"selectedIconPath": "static/imgs/fire_green.png",				"text": "User"			}		]	}
+			},			{				"pagePath": "pages/user/user",				"iconPath": "static/imgs/user_default.png",				"selectedIconPath": "static/imgs/user_active.png",				"text": "User"			}		]	}
 }

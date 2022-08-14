@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		Category
 	</view>
 </template>
 

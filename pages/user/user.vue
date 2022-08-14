@@ -1,6 +1,6 @@
 <template>
-  
-  <button @click="handleLogout">退出登录</button>
+  User
+  <button type="primary" @click="handleLogout">退出登录</button>
 </template>
 
 <script setup>
