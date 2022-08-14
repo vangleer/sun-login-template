@@ -11,7 +11,12 @@
 	})
 	
 	function handleSubmit() {
-		if(!state.mobile) return uni.showToast({title: '请输入手机号',icon:'none',duration: 1500})		if(!state.password) return uni.showToast({title: '请输入密码',icon:'none',duration: 1500})		uni.showToast({title: '登录成功',duration: 1500})	}
+		if(!state.mobile) return uni.showToast({title: '请输入手机号',icon:'none',duration: 1500})		if(!state.password) return uni.showToast({title: '请输入密码',icon:'none',duration: 1500})		uni.showToast({title: '登录成功',duration: 1500})
+		setTimeout(() => {
+			uni.switchTab({
+				url: '/pages/home/home'
+			})
+		}, 1000)	}
 	
 	function goRegister() {		uni.navigateTo({url: '/pages/register/register'})	}
 </script>

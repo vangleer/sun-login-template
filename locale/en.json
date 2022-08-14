@@ -1,7 +1,13 @@
 {
 	"home.name": "Home",
+	"home.title1": "i18n",
+	"home.title2": "request",
+	"home.title3": "pinia",
+	"home.tip": "vue3 uniapp template",
+	
 	"category.name": "Category",
 	"user.name": "User",
+	"user.logout": "Logout",
 	"login.name": "Login",
 	"register.name": "Register"
 }

@@ -1,6 +1,6 @@
 <template>
   {{ $t('user.name') }}
-  <button type="primary" @click="handleLogout">退出登录</button>
+  <button type="primary" style="background-color: #12C8B9;" @click="handleLogout">{{ $t('user.logout') }}</button>
 </template>
 
 <script setup>

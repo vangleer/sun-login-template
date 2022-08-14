@@ -1,7 +1,13 @@
 {
 	"home.name": "首页",
+	"home.tip": "vue3 uniapp 快速开发模板",
+	"home.title1": "国际化",
+	"home.title2": "request封装",
+	"home.title3": "pinia状态管理",
+	
 	"category.name": "分类",
 	"user.name": "用户",
+	"user.logout": "退出登录",
 	"login.name": "登录",
 	"register.name": "注册"
 }
