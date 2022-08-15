@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="sun-page">
 		Category
 	</view>
 </template>

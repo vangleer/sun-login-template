@@ -22,6 +22,7 @@
 </template>
 
 <script setup>
+	import http from '@/api/request.js'
 	import { changeLocale } from '@/locale/index.js'
 	import { useAppStore } from '@/store/index.js'
 	const store = useAppStore()
@@ -36,6 +37,10 @@
 			case 'i18n':
 				changeI18n()
 				break
+			case 'request':
+				http.get('/locale/en.json').then(res => {
+					console.log(res)
+				})
 			default:
 				uni.showToast({
 					title: item.key
@@ -51,9 +56,7 @@
 </script>
 
 <style>
-.sun-page {
-	padding: 30rpx;
-}
+
 .sun-title {
 	font-size: 44rpx;
 	font-weight: 600;

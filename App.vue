@@ -33,4 +33,7 @@
 	image {
 		box-sizing: border-box;
 	}
+	.sun-page {
+		padding: 30rpx;
+	}
 </style>
