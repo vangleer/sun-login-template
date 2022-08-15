@@ -7,7 +7,7 @@ const messages = {
 	'zh': zh
 }
 let i18nConfig = {
-  locale: uni.getLocale(), // 获取已设置的语言
+  locale: uni.getLocale() || 'zh', // 获取已设置的语言
   messages
 }
 export const i18n = createI18n(i18nConfig)

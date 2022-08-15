@@ -1,5 +1,10 @@
 # 基于 uniapp 实现的登录注册模板
 
+- 登录注册页面
+- Pinia状态管理
+- 118n国际化
+- request请求封装
+
 ## 1、微信小程序版本+h5 版本
 
 ## 2、插件下载
@@ -9,21 +14,13 @@
   [https://ext.dcloud.net.cn/plugin?id=4174](https://ext.dcloud.net.cn/plugin?id=4174)
 
 ## 3、模板预览
-
-### h5+APP
-
-![h5+APP登录](https://vangleer.github.io/sun-login-template/static/temp/h5_login.png)
+## 
+![首页](https://vangleer.github.io/sun-login-template/static/temp/home.png)
 <br />
 
-![h5+APP注册](https://vangleer.github.io/sun-login-template/static/temp/h5_register.png)
-
+![登录](https://vangleer.github.io/sun-login-template/static/temp/login.png)
 <br />
 
-### 微信小程序
-
-![微信小程序登录](https://vangleer.github.io/sun-login-template/static/temp/wechat_login.png)
-<br />
-
-![微信小程序注册](https://vangleer.github.io/sun-login-template/static/temp/wechat_register.png)
+![注册](https://vangleer.github.io/sun-login-template/static/temp/register.png)
 
 如果这个能帮助到你, 请点击 star 来支持我噢. ^\_^
