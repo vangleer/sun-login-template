@@ -4,6 +4,8 @@
 - vue2版本在分支2.x上，只有简单的登录注册模板
 - vue3新增了Pinia状态管理、国际化、request请求
 
+[在线预览](https://vangleer.github.io/sun-login-template/dist)
+
 ## 1、微信小程序版本+h5 版本
 
 - 登录注册页面
@@ -18,13 +20,13 @@
   [https://ext.dcloud.net.cn/plugin?id=4174](https://ext.dcloud.net.cn/plugin?id=4174)
 
 ## 3、模板预览
-## 
-![首页](https://vangleer.github.io/sun-login-template/static/temp/home.png)
+
+![首页](https://vangleer.github.io/sun-login-template/static/temp/home.jpg)
 <br />
 
-![登录](https://vangleer.github.io/sun-login-template/static/temp/login.png)
+![登录](https://vangleer.github.io/sun-login-template/static/temp/login.jpg)
 <br />
 
-![注册](https://vangleer.github.io/sun-login-template/static/temp/register.png)
+![注册](https://vangleer.github.io/sun-login-template/static/temp/register.jpg)
 
 如果这个能帮助到你, 请点击 star 来支持我噢. ^\_^
