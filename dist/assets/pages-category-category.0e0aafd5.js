@@ -1,0 +1,1 @@
+import{o as a,c as e,w as s,b as r,h as t}from"./index.1af1ede5.js";import{_ as o}from"./plugin-vue_export-helper.21dcd24c.js";var d=o({data:()=>({}),methods:{}},[["render",function(o,d,n,p,u,c){const f=t;return a(),e(f,{class:"sun-page"},{default:s((()=>[r(" Category ")])),_:1})}]]);export{d as default};
